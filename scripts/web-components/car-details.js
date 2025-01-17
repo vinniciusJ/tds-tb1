@@ -142,9 +142,9 @@ class CarDetails extends HTMLElement {
                         aria-labelledby="headingFeatures"
                     >
                         <div class="accordion-body">
-                            <p>
-                                ${this.car.features}
-                            </p>
+                            <ul>
+                                ${this.car.features.split(',').map((feat) => `<li>${feat}</li>`).join('')}
+                            </ul>
                         </div>
                     </div>
                 </div>

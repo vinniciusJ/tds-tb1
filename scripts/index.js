@@ -1,16 +1,19 @@
 import cars from "../database/index.js";
 import { getSearchParam, paginateArray, setSearchParam } from "./utils.js";
 
-const createCardCardElement = (car) =>
-  `<car-card 
+const createCardCardElement = function (car) {
+    return (
+        `<car-card 
         id="${car.id}" 
         price="${car.price}"
         category="${car.type}" 
         name="${car.name}" 
         imageUrl="${car.imageUrl}"
-    />`;
+        />`
+    )
+}
 
-const createGridElement = (children) => {
+const createGridElement = function (children) {
   const article = document.createElement("article");
 
   article.className = "col-12 col-md-6 col-lg-3";
