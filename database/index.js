@@ -102,6 +102,19 @@ const cars = [
         "features": "Plug-in hybrid, sleek design, high performance",
         "imageUrl": "/assets/images/s60_recharge.jpg",
         "available": true
+    },
+    {
+        "id": "s60-recharge2",
+        "name": "S60 Recharge",
+        "price": 70000,
+        "year": "2021-09-01",
+        "color": "Yellow",
+        "brand": "Volvo",
+        "model": "S60",
+        "type": "sedan",
+        "features": "Plug-in hybrid, sleek design, high performance",
+        "imageUrl": "/assets/images/s60_recharge.jpg",
+        "available": true
     }
 ];
 
